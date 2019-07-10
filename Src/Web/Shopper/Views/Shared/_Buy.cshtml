@@ -1,0 +1,25 @@
+﻿@model CoreDomainFeature.ShopSharedData.StripeCheckoutData
+
+@{
+  ViewData["Title"] = $"Checkout {Model.ProductName}";
+
+  var imgSrc = "../../assets/PaymentCards/main-book.png";
+}
+
+<article class="FormGroup">
+  <p>Product Name: @Model.ProductName</p>
+  <p>Product Cost: £@Model.ProductPrice</p>
+  <p>Product Quantity: @Model.ProductQuantity</p>
+  <p>Shipping Cost: £@Model.ShippingCost</p>
+  <p>Total: £@Model.TotalCostFeedback</p>
+</article>
+
+<script src="//checkout.stripe.com/v2/checkout.js"
+        class="stripe-button"
+        data-key="@Model.StripeKeyPublishable"
+        data-locale="auto"
+        data-image="@imgSrc"
+        data-name="@Model.ProductName"
+        data-description="@Model.ProductDescription"
+        data-amount="@Model.TotalCost">
+</script>

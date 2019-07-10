@@ -1,0 +1,19 @@
+﻿
+@model CoreControllers.ViewModels.CheckoutThanksViewModel
+
+@{
+
+  ViewData["Title"] = $"Checkout {@Model.ProductName}";
+}
+
+<aside class="UserFeedbackThanks FormGroup">
+  <h1>Hi @Model.TitleAndFullName</h1>
+  <h2>Thank you for shopping with us.</h2>
+  <h3>Purchase Details</h3>
+
+  <p>Product Name: @Model.ProductName</p>
+  <p>Product Cost: £@Model.UserFeedbackBuyPageProductPrice</p>
+  <p>Product Quantity: @Model.UserFeedbackThanksProductQuantity</p>
+  <p>Shipping Cost: £@Model.UserFeedbackBuyPageShippingCost</p>
+  <p>Total: £@Model.UserFeedbackBuyPageTotalCost</p>
+</aside>

@@ -1,0 +1,62 @@
+﻿<p id="CloseMenu" class="ModalMenuButtonContainer">
+  <a href="/" class="FixedHomeLogo WebAppMenuButtonB">
+    <span class="CloseMenu">eShop</span>
+  </a>
+</p>
+
+<header class="HeaderNavigationContainerMain NavShowHide HideOrShow MAK">
+  <nav class="navbar navbar-expand-sm navbar-dark justify-content-center NavBG" role="navigation">
+    <ul class="navbar-nav">
+      <li id="NavbarStripSmall" class="nav-item"><span></span></li>
+
+      <li class="NavLarge nav-item">
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">
+          @ViewData["Home"]
+        </a>
+      </li>
+      <li class="NavLarge nav-item">
+        <a asp-area="" asp-controller="About" asp-action="Index" class="nav-link">
+          @ViewData["About"]
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<div id="SmallScreenMenu" role="navigation">
+  <p>
+    <a asp-area="" asp-controller="Home" asp-action="Index">
+      @ViewData["Home"]
+    </a>
+    <a asp-area="" asp-controller="About" asp-action="Index">
+      @ViewData["About"]
+    </a>
+  </p>
+</div>
+
+<div id="sidebar" role="navigation">
+  <p>
+    <a asp-area="" asp-controller="Home" asp-action="Index">
+      @ViewData["Home"]
+    </a>
+    <a asp-area="" asp-controller="About" asp-action="Index">
+      @ViewData["About"]
+    </a>
+  </p>
+</div>
+
+<p id="ToggleSidebar" class="ModalMenuButtonContainer toggle-btn LARGE">
+  <button class="NavigationMenuButton">
+    <span class="icon-bar A"></span>
+    <span class="icon-bar A"></span>
+    <span class="icon-bar A"></span>
+  </button>
+</p>
+
+<p id="ToggleSmallScreenMenu" class="ModalMenuButtonContainer toggle-btn SMALL">
+  <button class="ModalMenuButton">
+    <span class="icon-bar A"></span>
+    <span class="icon-bar A"></span>
+    <span class="icon-bar A"></span>
+  </button>
+</p>

@@ -1,0 +1,139 @@
+﻿@model CoreControllers.ViewModels.CheckoutViewModel
+
+
+<div class="card FrmCardSection">
+<div class="card-body">
+<div class="form-group">
+    <h4 class="MarginTop_X3  MarginBottom_X1">Product Details</h4>
+    <p>Product Name: @Model.ProductViewModel.ProductName</p>
+    <input asp-for="ProductViewModel.ProductName" type="hidden" />
+
+    <input asp-for="ProductViewModel.ProductDescription" type="hidden" />
+
+    <p>Product Price: £@Model.ProductViewModel.ProductPrice</p>
+    <input asp-for="ProductViewModel.ProductPrice" type="hidden" />
+  </div>
+</div>
+</div>
+
+
+
+<div class="card FrmCardSection">
+
+  <div class="card-body">
+<div class="form-group">
+  <h5 class="MarginTop_X1  MarginBottom_X1">Choice of 4 Colours</h5>
+    <partial name="_UCosyColours" />
+
+    <label asp-for="SelectedColour" class="control-label"></label>
+
+    <select asp-for="SelectedColour" asp-items="Model.GetListOfColours()" class="form-control">
+      <option value="">--- Select Product Colour ---</option>
+    </select>
+
+    <span asp-validation-for="SelectedColour" class="text-danger"></span>
+  </div>
+  </div>
+</div>
+
+<div class="card FrmCardSection">
+  <div class="card-body">
+<div class="form-group">
+  <h4>Product Quantity</h4>
+    <label asp-for="ProductQuantity" class="control-label"></label>
+
+    <input asp-for="ProductQuantity" class="ProductQuantity form-control" value="1" min="1" step="1" />
+
+    <span asp-validation-for="ProductQuantity" class="text-danger"></span>
+  </div>
+  </div>
+</div>
+
+<div class="card FrmCardSection">
+  <div class="card-body">
+  <div class="form-group">
+    <h4>Personal Details</h4>
+    <label asp-for="CustomerViewModel.TitleAndFullName" class="control-label"></label>
+
+    <input asp-for="CustomerViewModel.TitleAndFullName" class="form-control" placeholder="Full Name (Required) e.g. Mr Jon Doe" />
+
+    <span asp-validation-for="CustomerViewModel.TitleAndFullName" class="text-danger"></span>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="CustomerViewModel.Email" class="control-label"></label>
+
+    <input asp-for="CustomerViewModel.Email" class="form-control" placeholder="Email (Required)" />
+
+    <span asp-validation-for="CustomerViewModel.Email" class="text-danger"></span>
+  </div>
+
+  </div>
+</div>
+
+<div class="card FrmCardSection">
+  <div class="card-body">
+  <div class="form-group">
+    <h4 class="MarginTop_X3  MarginBottom_X1">Billing and Shipping Address Details</h4>
+    <label asp-for="CountryZoneId" class="control-label"></label>
+
+    <select asp-for="CountryZoneId" asp-items="Model.AvailableCountryZones" class="form-control"></select>
+
+    <span asp-validation-for="CountryZoneId" class="text-danger"></span>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="CountryId" class="control-label"></label>
+
+    <select asp-for="CountryId" asp-items="Model.AvailableCountries" class="form-control"></select>
+
+    <span asp-validation-for="CountryId" class="text-danger"></span>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="CustomerViewModel.PostalAddressViewModel.City" class="control-label"></label>
+
+    <input asp-for="CustomerViewModel.PostalAddressViewModel.City" class="form-control" placeholder="City (Required)" />
+
+    <span asp-validation-for="CustomerViewModel.PostalAddressViewModel.City" class="text-danger"></span>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="CustomerViewModel.PostalAddressViewModel.Address1" class="control-label"></label>
+
+    <input asp-for="CustomerViewModel.PostalAddressViewModel.Address1" class="form-control" placeholder="Address (Required)" />
+
+    <span asp-validation-for="CustomerViewModel.PostalAddressViewModel.Address1" class="text-danger"></span>
+  </div>
+
+  <div class="form-group">
+    <label asp-for="CustomerViewModel.PostalAddressViewModel.PostOrZipCode" class="control-label"></label>
+
+    <input asp-for="CustomerViewModel.PostalAddressViewModel.PostOrZipCode" class="form-control" placeholder="Post or ZipCode (Required)" />
+
+    <span asp-validation-for="CustomerViewModel.PostalAddressViewModel.PostOrZipCode" class="text-danger"></span>
+  </div>
+  </div>
+</div>
+
+<div class="card FrmCardSection">
+  <div class="card-body">
+<h4 class="MarginTop_X3  MarginBottom_X1">Go Pay</h4>
+
+  <p class="ClickWhenFormFilledIn MarginBottom_X1">When all required fields are filled in, you can click (Go Pay).</p>
+
+  <div class="form-group">
+    <input type="submit" id="SubmitId" name="btnConfirm" value="Go Pay" class="btn btn-primary btn-lg" />
+  </div>
+  </div>
+</div>
+
+
+<!-- <div class="card">
+  <div class="card-header">
+
+  </div>
+  <div class="card-body">
+
+  </div>
+</div> -->

@@ -1,0 +1,516 @@
+﻿/* ---------------------------- */
+.LinkOval.btn
+{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 60px 0 0 0;
+  border-radius: 100%;
+}
+
+.FixedHome
+{
+  top: 13px;
+  left: 10px;
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+
+.ToggleMenuOfCourses .ToggleMenuOfCoursesHeader
+{
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0 10px 28px;
+  text-align: left;
+  color: #00495d;
+}
+
+.ButtonContainer
+{
+  margin: 0 auto;
+  text-align: center;
+}
+
+button.close span
+{
+  color: #000;
+}
+
+.ToggleMenu, .ScreenSmallMenuMore
+{
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background-color: #a6dfef;
+}
+
+
+#NavbarStripSmall
+{
+  display: block;
+}
+
+#NavbarStripSmall span
+{
+  display: block;
+  padding-top: 15px;
+  border: none;
+  color: #FFF;
+}
+
+.ToggleMenu p, .ScreenSmallMenuMore p
+{
+  width: 100%;
+  margin: 0 auto 2px auto;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.00);
+}
+
+.ScreenSmallMenuMore p button, .ToggleMenu p button, .ToggleMenu p a, .ScreenSmallMenuMore p a
+{
+  display: block;
+  margin: 0 auto;
+  padding: 15px 10px;
+  background-color: #245288;
+  color: #FFF;
+  transition: all 0.5s ease;
+}
+
+.ToggleMenu p a:hover, .ToggleMenu p a:focus, .ToggleMenu p a:active, .ScreenSmallMenuMore p a:hover, .ScreenSmallMenuMore p a:focus, .ScreenSmallMenuMore p a:active
+{
+  background-color: #3569a7;
+}
+
+.ScreenSmallMenuMore .ScreenSmall
+{
+  display: block;
+}
+
+.ScreenSmallMenuMore .ScreenLarge
+{
+  display: none;
+}
+
+
+@media (min-width: 992px)
+{
+  .ScreenLarge
+  {
+    width: auto;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  .ScreenSmallMenuMore
+  {
+    background-color: #245288;
+  }
+}
+
+.MenuButtonB, .ModalMenuButtonB, .ModalMenuButton, .NavigationMenuButton, .FixedHome
+{
+  display: block;
+  position: fixed;
+  background-color: #092342;
+  color: #FFF;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  z-index: 999999999999999;
+}
+
+.ModalMenuButton, .NavigationMenuButton
+{
+  top: 0;
+  left: 10px;
+  padding: 14px 8px;
+  border-radius: 12px;
+}
+
+.NavigationMenuButton
+{
+  display: none;
+}
+
+.ModalMenuButton
+{
+  display: block;
+}
+
+.MenuButtonB, .ModalMenuButtonB
+{
+  top: 12px;
+  left: 60px;
+  padding: 8px 9px;
+  border-radius: 12px;
+}
+
+.ModalMenuButtonB, .ModalMenuButton
+{
+  display: block;
+}
+
+.MenuButtonB
+{
+  display: none;
+}
+
+.ModalMenuButtonB:focus, .ModalMenuButton:focus, .NavigationMenuButton:focus, .MenuButtonB:focus, .FixedHome:focus, .ModalMenuButtonB:hover, .ModalMenuButton:hover, .NavigationMenuButton:hover, .MenuButtonB:hover, .FixedHome:hover
+{
+  background-color: #226cc3;
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+li .glyphicon
+{
+  margin-right: 10px;
+}
+
+.nav > li.NavLarge
+{
+  display: none;
+}
+
+@media (min-width: 768px)
+{
+  .nav > li.NavLarge
+  {
+    display: inline-block;
+  }
+}
+
+.MenuButtonB .MenuClose, .ModalMenuButtonB .MenuClose
+{
+  display: none;
+}
+
+.collapse
+{
+  display: block;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+.ModalMenuButtonContainer
+{
+  margin: 0 auto;
+}
+
+.FixedHomeLogo
+{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 60px;
+  background-color: transparent;
+  color: #FFF;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  outline: none;
+  z-index: 999999999999999;
+}
+
+.FixedHomeLogo:focus, .FixedHomeLogo:hover
+{
+  background-color: transparent;
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.NavBG
+{
+  background-color: #0e3f6f;
+}
+
+.CloseMenu
+{
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 10px;
+  border: 5px solid #ff6a00;
+  background-color: #000;
+  border-radius: 30px;
+}
+
+.CloseMenu:focus, .CloseMenu:hover
+{
+  background-color: #226cc3;
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 768px)
+{
+  .ToggleMenu
+  {
+    display: none;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 0;
+    opacity: 0;
+  }
+
+  #NavbarStripSmall
+  {
+    display: none;
+  }
+
+  .ScreenSmallMenuMore .ScreenSmall
+  {
+    display: none;
+  }
+
+  .ScreenSmallMenuMore .ScreenLarge
+  {
+    display: block;
+  }
+
+  .ScreenSmallMenuMore .ScreenLarge p
+  {
+    text-align: center;
+  }
+
+  .row.ToggleMenuOfCoursesContainer
+  {
+    margin: 0 auto;
+  }
+
+  .row.ToggleMenuOfCoursesContainer .col-sm-3
+  {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ScreenSmallMenuMore
+  {
+    width: 100%;
+  }
+
+  .ScreenSmallMenuMore p
+  {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .ScreenSmallMenuMore p button, .ScreenSmallMenuMore p a
+  {
+    display: block;
+    width: 100%;
+  }
+
+  .ModalMenuButtonB, .ModalMenuButton
+  {
+    display: none;
+  }
+
+  .MenuButtonB, .NavigationMenuButton
+  {
+    display: block;
+  }
+}
+
+/* --- Bar Menu Sude ---------------------------------- */
+#sidebar, #SmallScreenMenu
+{
+  position: fixed;
+  transition: all 500ms;
+  background-color: rgba(9, 35, 66, 0.1);
+  z-index: 9999;
+}
+
+#sidebar
+{
+  display: none;
+  left: -200px;
+  top: 60px;
+  width: 200px;
+  height: 100%;
+}
+
+#SmallScreenMenu
+{
+  display: block;
+  top: -520px;
+  width: 100%;
+  transition: all 550ms;
+}
+
+#sidebar.active
+{
+  left: 0;
+}
+
+#sidebar.close
+{
+  left: -200px;
+}
+
+#SmallScreenMenu.active
+{
+  top: 60px;
+}
+
+#SmallScreenMenu.close
+{
+  top: -520px;
+}
+
+#SmallScreenMenu p, #sidebar p, #SmallScreenMenu ul, #sidebar ul
+{
+  width: 100%;
+  margin: 20px auto;
+  padding: 0;
+}
+
+#SmallScreenMenu ul li, #sidebar ul li
+{
+  color: #eee;
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+}
+
+#SmallScreenMenu p a, #sidebar p a, #SmallScreenMenu ul li a, #sidebar ul li a
+{
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #245288;
+  color: #FFF;
+  transition: all 0.5s ease;
+  z-index: 999999;
+}
+
+.icon-bar
+{
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 5px 0;
+}
+
+.icon-bar + .icon-bar
+{
+  margin-top: 4px;
+}
+
+.icon-bar.A
+{
+  background-color: #FFF;
+}
+
+.icon-bar.B
+{
+  background-color: #FFF;
+}
+
+.SideMenuScreenLarge p a:active, .SideMenuScreenLarge p a:focus, .SideMenuScreenLarge p a:hover,
+#SmallScreenMenu ul li a:active, #SmallScreenMenu ul li a:focus, #SmallScreenMenu ul li a:hover,
+#sidebar ul li a:active, #sidebar ul li a:focus, #sidebar ul li a:hover,
+#SmallScreenMenu p a:active, #SmallScreenMenu p a:focus, #SmallScreenMenu p a:hover,
+#sidebar p a:active, #sidebar p a:focus, #sidebar p a:hover
+{
+  background-color: #3569a7;
+  text-decoration: none;
+  outline: none;
+}
+
+#ToggleSidebar
+{
+  display: none;
+}
+
+#ToggleSmallScreenMenu
+{
+  display: block;
+}
+
+@media(min-width: 768px)
+{
+  #sidebar, #ToggleSidebar
+  {
+    display: block;
+    z-index: 9999;
+  }
+
+  #SmallScreenMenu, #ToggleSmallScreenMenu
+  {
+    display: none;
+  }
+}
+
+/* -------------------------------- */
+.HideOrShow
+{
+  display: none;
+}
+
+@media(min-width: 768px)
+{
+  .HideOrShow, .HideOnSmallScreen--
+  {
+    display: block;
+  }
+}
+
+.HRLineDefault
+{
+  padding: 10px 0;
+  background-color: #226cc3;
+}
+
+.HRBorderRadius
+{
+  border-radius: 50%;
+}
+
+/* --- Start Overrides --------------------------- */
+.MAK .navbar-nav .nav-link, .MAK .ThemeColor, .MAK a.ThemeColor
+{
+  color: #FFF;
+}
+
+.MAK .ThemeBackground
+{
+  background-color: #000;
+}
+
+.BannerD
+{
+  background-color: #9ba8cc;
+  background-color: #eff2fb;
+}
+
+#BGImg.jumbotron.BGImg
+{
+  background: url('../background/05.jpg') no-repeat 50%;
+  background-size: cover;
+}
+
+.FrmCard
+{
+  background-color: #dfecff;
+}
+
+.FrmCardSection
+{
+  background-color: #f1f6ff;
+}
